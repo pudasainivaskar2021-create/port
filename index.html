@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #ffe5ec;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .swiper { width: 100%; height: 100%; }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* GIF Styling - Fixed and Visible */
+        .teddy-gif {
+            width: 160px; /* Big enough to see */
+            height: auto;
+            margin-bottom: 20px;
+            z-index: 10;
+        }
+
+        .card {
+            background: white;
+            padding: 15px 15px 30px 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 85%;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        h2 { font-family: 'Dancing Script', cursive; color: #ff4d6d; font-size: 1.8rem; margin: 5px 0; }
+        p { font-size: 0.9rem; color: #555; }
+
+        .swiper-button-next, .swiper-button-prev { color: #ff4d6d; }
+    </style>
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Rnd2ZqamR4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/v6aOebdclIyKSR9C8V/giphy.gif" class="teddy-gif">
+                <div class="card" style="transform: rotate(-2deg);">
+                    <h2>Hey Princess...</h2>
+                    <p>I’m really sorry for everything. I hate it when we fight. Please swipe... 👉</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZyeGd4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/L95W4wv8nnb9O48Q2S/giphy.gif" class="teddy-gif">
+                <div class="card" style="transform: rotate(2deg);">
+                    <img src="https://i.ibb.co/whY2vQqs/photo1.jpg" alt="Photo 1">
+                    <h2>I Miss You</h2>
+                    <p>My day feels empty without your smile. I promise to be better.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Rnd2ZqamR4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/MDJ9iM9G6U39O/giphy.gif" class="teddy-gif">
+                <div class="card" style="transform: rotate(-1deg);">
+                    <img src="https://i.ibb.co/Z6SwVnZY/photo2.jpg" alt="Photo 2">
+                    <h2>Forgive me?</h2>
+                    <p>You mean the world to me. I never want to let you go.</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHY5M2Rnd2ZqamR4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4ZzRndmN4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/k9Jw0MW9TV6DbewYXW/giphy.gif" class="teddy-gif">
+                <div class="card" style="transform: rotate(1deg);">
+                    <img src="https://i.ibb.co/vCML3Wv6/photo3.jpg" alt="Photo 3">
+                    <h2>Always Yours</h2>
+                    <p>I love you more than words can say. Forever. ❤️</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
